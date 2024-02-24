@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Golden Egg</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -121,12 +121,157 @@
               превращаются в настоящие шедевры. Никто не останется равнодушным к
               такому непревзойденному сочетанию.
             </p>
-            <p>
+            <p class="team__text-about">
               Своей работой мы хотим радовать каждого нашего посетителя. Мы
               гарантируем всем клиентам, что время, проведенное в нашем
               заведении, будет отличаться особым теплом и изысканным вкусом.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section class="order" id="order">
+        <div class="container order__container">
+          <div class="order__text">
+            <h2>Заказать столик</h2>
+            <form action="#" class="order-form">
+              <input type="text" placeholder="Имя" required />
+              <input type="text" placeholder="Email" required />
+              <input type="text" placeholder="Телефон" required />
+              <div class="order__select">
+                <select required>
+                  <option value="">Кол-во людей</option>
+                  <option value="1">1</option>
+                  <option value="2-5">2 - 5</option>
+                  <option value="5-10">5 - 10</option>
+                  <option value="10-40">10 - 40</option>
+                  <option value="40-100">40 - 100</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Дата (дата/месяц)" required />
+              <div class="order__select">
+                <select required>
+                  <option value="">Время</option>
+                  <option value="10:00 - 14:00">10:00 - 14:00</option>
+                  <option value="14:00 - 18:00">14:00 - 18:00</option>
+                  <option value="18:00 - 23:00">18:00 - 23:00</option>
+                </select>
+              </div>
+              <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+            </form>
+          </div>
+          <div class="order__img">
+            <img src="./img/order-img.jpg" alt="order image" />
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="order__contacts">
+            Пн - Пт: <strong>8 - 22</strong>, Сб - Вс: <strong>9 - 23</strong>,
+            Телефон:
+            <a href="tel:+38098 729 13 67"><strong>+38098 729 13 67</strong></a>
+            <strong>/</strong>
+            <a href="tel:+38097 458 78 79"><strong>+38097 458 78 79</strong></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="spec">
+        <div class="container spec__container">
+          <h6>CПЕЦ-ПРЕДЛОЖЕНИЕ</h6>
+        </div>
+
+        <div class="swiper-container spec__slider">
+          <div class="swiper-wrapper">
+            <!--slide-->
+            <div class="swiper-slide spec__slide">
+              <div class="container spec__slide-container">
+                <div class="spec__img">
+                  <img src="./img/slide1.jpg" alt="slide1" />
+                  <div class="circle"></div>
+                </div>
+                <div class="spec__text">
+                  <h2>GOLDEN EGG</h2>
+                  <p class="intro">
+                    Невероятно красивый десерт Пирожное "Golden Egg". 3D
+                    пирожное в форме яйца в гнёздышке.
+                  </p>
+                  <p class="spec__text-about">
+                    Узнать, каково золото на вкус, приглашаем в наш ресторан.
+                    Темный бельгийский шоколад, Амаретто, мусс мята-лемонграсс,
+                    центр морковь-маракуйя — удержаться почти невозможно.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--end slide-->
+            <!--slide-->
+            <div class="swiper-slide spec__slide">
+              <div class="container spec__slide-container">
+                <div class="spec__img">
+                  <img src="./img/slide2.jpg" alt="slide2" />
+                  <div class="circle"></div>
+                </div>
+                <div class="spec__text">
+                  <h2>УТИНЫЕ ИСТОРИИ</h2>
+                  <p class="intro">
+                    Утиные ножки здесь маринуют с травами, запекают, а потом
+                    тушат, пока мясо не приобретет нежную текстуру.
+                  </p>
+                  <p class="spec__text-about">
+                    К утке подают красную капусту, томлёную в красном вине, а
+                    также толчёный картофель со шкварками. Фермерскую утиную
+                    грудку обжаривают и подают с соусом демиглас и вишнёвым
+                    кули, а также с нежным картофельным гратеном, запечённым со
+                    сливками, тимьяном и сыром пармезан.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--end slide-->
+            <!--slide-->
+            <div class="swiper-slide spec__slide">
+              <div class="container spec__slide-container">
+                <div class="spec__img">
+                  <img src="./img/slide1.jpg" alt="slide1" />
+                  <div class="circle"></div>
+                </div>
+                <div class="spec__text">
+                  <h2>GOLDEN SHMEGG</h2>
+                  <p class="intro">
+                    Ужасно красивый десерт Пирожное "Silver Shmegg". 4D пирожное
+                    в форме яйца в гнёздышке.
+                  </p>
+                  <p class="spec__text-about">
+                    Узнать, каково серебро на вкус, приглашаем в наш ресторан.
+                    Темный бельгийский шоколад, Амаретто, мусс мята-лемонграсс,
+                    центр морковь-маракуйя — невозможно удержаться.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--end slide-->
+          </div>
+          <div class="swiper-pagination spec__pagination"></div>
+        </div>
+      </section>
+
+      <section class="menu" id="menu">
+        <h2>НАШЕ МЕНЮ</h2>
+        <p class="intro menu__intro">
+          Предлагаем насладиться кухней от профессиональных поваров ресторана
+          GOLDEN EGG!
+        </p>
+
+        <div class="tabs__container">
+          <ul class="tabs">
+            <li class="tabs__item active" data-tab="#snacks">ЗАКУСКИ</li>
+            <li class="tabs__item" data-tab="#meats">МЯСНЫЕ БЛЮДА</li>
+            <li class="tabs__item" data-tab="#">САЛАТЫ</li>
+            <li class="tabs__item">ДЕСЕРТЫ</li>
+            <li class="tabs__item">ВИНА</li>
+            <li class="tabs__item">НАПИТКИ</li>
+          </ul>
         </div>
       </section>
     </div>
