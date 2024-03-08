@@ -36,7 +36,7 @@
     min-width: 163px;
     cursor: pointer;
     padding: 0 10px;
-    transition: .3s;
+    transition: 0.3s;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -52,8 +52,99 @@
       border-right: none;
     }
   }
-  &.overflow {    
+  &.overflow {
     left: 0;
     transform: none;
+  }
+}
+
+.menu__sliders {
+  position: relative;
+  max-width: $container;  
+  margin: $mc;
+  overflow: hidden;
+  height: 460px;
+}
+
+.menu__slider {
+  height: 100%;
+}
+
+.menu__slider-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+  &.show {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.menu__item {
+  max-width: 510px;
+  @include flex(space-between, center);  
+  &-img {
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+    border: 4px solid $yellow;
+  }
+  &-text {
+    max-width: 220px;
+    margin-left: 25px;
+  }
+}
+
+.menu__title,
+.menu__price {
+  font-family: $kurale;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: $tabs;
+  font-weight: 400;
+}
+
+.menu__title {
+  display: inline-block;
+  border-bottom: 1px solid $tabs-opacity;  
+}
+
+.menu__desc{
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 20px;
+  color: $gray-opacity;
+}
+
+.menu__slider .swiper-slide{  
+  height: 175px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu__pagination{
+  @include flex(center, center);
+  position: absolute;
+  width: 100%;  
+  bottom: 0;
+  z-index: 2;
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $gray-opacity;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.3s;
+    &:hover{
+      background-color: $yellow;
+    }
+    &.swiper-pagination-bullet-active{
+      background-color: $yellow;
+    }
   }
 }
